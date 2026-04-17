@@ -1,35 +1,461 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Your New Business" description="a financial management and investment platform that helps investors us AI to grow their portfolio">
-  <!-- Hero — the Product Agent will replace this entire page -->
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 via-surface-50 to-brand-500/10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display max-w-4xl mx-auto leading-[1.1] animate-slide-up">
-        Your New Business
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-surface-800/60 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-100">
-        a financial management and investment platform that helps investors us AI to grow their portfolio
-      </p>
-      <div class="mt-10 animate-slide-up delay-200">
-        <a href="#cta" class="inline-block px-8 py-3.5 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition-colors text-base">
-          Get Started
-        </a>
+<Base
+  title="Veltora — Your portfolio's AI advantage"
+  description="Veltora brings institutional-grade AI to self-directed investors — personalized strategies, real-time insights, and full portfolio clarity in one platform."
+>
+
+  <!-- ================================================================
+       HERO — Full-width, layered gradient, electric teal accents
+       ================================================================ -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+    <!-- Layered gradient background -->
+    <div class="absolute inset-0" style="
+      background:
+        radial-gradient(ellipse at 15% 60%, oklch(0.64 0.16 178 / 0.12), transparent 55%),
+        radial-gradient(ellipse at 85% 20%, oklch(0.64 0.16 178 / 0.07), transparent 50%),
+        radial-gradient(ellipse at 50% 100%, oklch(0.20 0.032 255 / 0.6), transparent 60%),
+        linear-gradient(160deg, oklch(0.13 0.018 250) 0%, oklch(0.17 0.022 250) 50%, oklch(0.15 0.030 255) 100%);
+    "></div>
+
+    <!-- Grid overlay -->
+    <div class="absolute inset-0" style="
+      background-image:
+        linear-gradient(oklch(0.95 0.006 80 / 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, oklch(0.95 0.006 80 / 0.025) 1px, transparent 1px);
+      background-size: 72px 72px;
+    "></div>
+
+    <!-- Teal accent line at top -->
+    <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg, transparent, oklch(0.64 0.16 178 / 0.8), transparent);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-4xl">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border mb-8 animate-fade-in" style="border-color: oklch(0.64 0.16 178 / 0.3); background: oklch(0.64 0.16 178 / 0.08);">
+          <span class="w-1.5 h-1.5 rounded-full" style="background: oklch(0.64 0.16 178);"></span>
+          <span class="text-xs font-semibold tracking-widest uppercase" style="color: oklch(0.76 0.13 178);">AI Investment Co-Pilot</span>
+        </div>
+
+        <!-- Hero headline -->
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight font-display leading-[1.05] animate-slide-up delay-100" style="color: oklch(0.95 0.006 80);">
+          The AI investment edge<br/>
+          <span style="color: oklch(0.76 0.13 178);">your portfolio has been</span><br/>
+          waiting for
+        </h1>
+
+        <!-- Sub-headline -->
+        <p class="mt-6 text-lg md:text-xl leading-relaxed max-w-2xl animate-slide-up delay-200" style="color: oklch(0.82 0.008 80 / 0.75);">
+          Veltora brings institutional-grade AI to self-directed investors — personalized strategies, real-time insights, and full portfolio clarity in one platform.
+        </p>
+
+        <!-- CTAs -->
+        <div class="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-slide-up delay-300">
+          <a
+            href="#cta"
+            class="inline-flex items-center gap-2 px-7 py-3.5 font-semibold rounded-lg transition-all duration-150 text-base"
+            style="background: oklch(0.64 0.16 178); color: oklch(0.13 0.018 250); box-shadow: 0 0 32px oklch(0.64 0.16 178 / 0.35);"
+            onmouseover="this.style.background='oklch(0.54 0.15 178)'"
+            onmouseout="this.style.background='oklch(0.64 0.16 178)'"
+          >
+            Start my free analysis
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+              <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+          <a
+            href="#how-it-works"
+            class="inline-flex items-center gap-2 px-7 py-3.5 font-medium rounded-lg border transition-colors duration-150 text-base"
+            style="border-color: oklch(0.82 0.008 80 / 0.2); color: oklch(0.82 0.008 80 / 0.8);"
+          >
+            See how it works
+          </a>
+        </div>
+
+        <!-- Micro-proof -->
+        <p class="mt-4 text-sm animate-slide-up delay-400" style="color: oklch(0.82 0.008 80 / 0.40);">
+          No credit card required · Connect your brokerage in 2 minutes · Cancel anytime
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24" style="background: linear-gradient(to bottom, transparent, oklch(0.13 0.018 250));"></div>
+  </section>
+
+
+  <!-- ================================================================
+       SOCIAL PROOF BAR
+       ================================================================ -->
+  <section style="background: oklch(0.17 0.022 250); border-top: 1px solid oklch(0.95 0.006 80 / 0.06); border-bottom: 1px solid oklch(0.95 0.006 80 / 0.06);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 text-center">
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-bold font-display" style="color: oklch(0.76 0.13 178);">$2.4B+</span>
+          <span class="text-sm" style="color: oklch(0.82 0.008 80 / 0.55);">Assets analyzed daily</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-bold font-display" style="color: oklch(0.76 0.13 178);">47K+</span>
+          <span class="text-sm" style="color: oklch(0.82 0.008 80 / 0.55);">Self-directed investors</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-bold font-display" style="color: oklch(0.76 0.13 178);">3.8×</span>
+          <span class="text-sm" style="color: oklch(0.82 0.008 80 / 0.55);">Avg. insight-to-action speed</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-bold font-display" style="color: oklch(0.76 0.13 178);">12+</span>
+          <span class="text-sm" style="color: oklch(0.82 0.008 80 / 0.55);">Brokerages connected</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta" class="py-20 md:py-28">
+
+  <!-- ================================================================
+       POSITIONING / VALUE PROP
+       ================================================================ -->
+  <section class="py-20 md:py-28 lg:py-32" style="background: oklch(0.13 0.018 250);">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-brand-500 p-10 md:p-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-display">Ready to get started?</h2>
-        <p class="mt-4 text-lg text-white/80 max-w-xl mx-auto">Get in touch and see what we can do for you.</p>
-        <a href="mailto:hello@example.com" class="mt-8 inline-block px-8 py-3.5 bg-white text-surface-900 font-semibold rounded-lg hover:bg-surface-100 transition-colors text-base">
-          Contact Us
-        </a>
+      <div class="max-w-2xl mb-16">
+        <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: oklch(0.76 0.13 178);">Why Veltora</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-display leading-tight" style="color: oklch(0.95 0.006 80);">
+          Hedge fund intelligence.<br/>
+          <span style="font-family: 'Crimson Pro', Georgia, serif; font-style: italic; font-weight: 300; color: oklch(0.82 0.008 80 / 0.65);">Without the hedge fund fees.</span>
+        </h2>
+        <p class="mt-5 text-lg leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.65);">
+          You've outgrown generic robo-advisors. You're not ready to become a full-time trader. Veltora sits in that gap — your AI co-pilot that reads your entire portfolio, understands your goals, and surfaces the moves that matter.
+        </p>
+      </div>
+
+      <!-- Feature cards grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Card 1 -->
+        <div class="rounded-xl p-7 border transition-colors duration-150 group animate-slide-up delay-100"
+          style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5" style="background: oklch(0.64 0.16 178 / 0.12);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5" style="color: oklch(0.76 0.13 178);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold font-display mb-2" style="color: oklch(0.95 0.006 80);">Full Portfolio Aggregation</h3>
+          <p class="text-sm leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Connect every brokerage, IRA, and 401(k) in minutes. Veltora sees your complete financial picture — not just one account — and analyzes it as a whole.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl p-7 border transition-colors duration-150 group animate-slide-up delay-200"
+          style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5" style="background: oklch(0.64 0.16 178 / 0.12);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5" style="color: oklch(0.76 0.13 178);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold font-display mb-2" style="color: oklch(0.95 0.006 80);">Natural Language AI Queries</h3>
+          <p class="text-sm leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Ask "Am I over-exposed to tech?" or "What should I rebalance this quarter?" in plain English. Veltora answers with data-backed reasoning, not generic advice.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl p-7 border transition-colors duration-150 group animate-slide-up delay-300"
+          style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5" style="background: oklch(0.64 0.16 178 / 0.12);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5" style="color: oklch(0.76 0.13 178);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold font-display mb-2" style="color: oklch(0.95 0.006 80);">Automated Strategy Execution</h3>
+          <p class="text-sm leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Set rules, thresholds, and rebalancing targets. Veltora executes trades on your behalf — with full transparency at every step and human-in-the-loop controls.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl p-7 border transition-colors duration-150 group animate-slide-up delay-200"
+          style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5" style="background: oklch(0.64 0.16 178 / 0.12);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5" style="color: oklch(0.76 0.13 178);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold font-display mb-2" style="color: oklch(0.95 0.006 80);">Real-Time Risk Intelligence</h3>
+          <p class="text-sm leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Veltora monitors sector concentration, correlation risk, and drawdown probability — alerting you before problems surface, not after they've cost you.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="rounded-xl p-7 border transition-colors duration-150 group animate-slide-up delay-300"
+          style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5" style="background: oklch(0.64 0.16 178 / 0.12);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5" style="color: oklch(0.76 0.13 178);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold font-display mb-2" style="color: oklch(0.95 0.006 80);">No Hidden AUM Fees</h3>
+          <p class="text-sm leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Flat monthly pricing — not a percentage of what you've built. Keep more of your returns. We grow when you stay, not when your balance grows.
+          </p>
+        </div>
+
+        <!-- Card 6 — highlighted -->
+        <div class="rounded-xl p-7 border transition-colors duration-150 group animate-slide-up delay-400"
+          style="background: oklch(0.64 0.16 178 / 0.08); border-color: oklch(0.64 0.16 178 / 0.25);">
+          <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5" style="background: oklch(0.64 0.16 178 / 0.18);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5" style="color: oklch(0.76 0.13 178);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6.75v6.75"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold font-display mb-2" style="color: oklch(0.76 0.13 178);">Institutional AI Models</h3>
+          <p class="text-sm leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.65);">
+            The same quantitative signals used by hedge funds — factor models, macro overlays, earnings momentum — delivered in plain English, tuned to your goals.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
+
+
+  <!-- ================================================================
+       HOW IT WORKS
+       ================================================================ -->
+  <section id="how-it-works" class="py-20 md:py-28 lg:py-32 relative overflow-hidden" style="background: oklch(0.17 0.022 250);">
+
+    <div class="absolute inset-0" style="
+      background:
+        radial-gradient(ellipse at 80% 50%, oklch(0.64 0.16 178 / 0.06), transparent 55%),
+        radial-gradient(ellipse at 10% 80%, oklch(0.20 0.032 255 / 0.4), transparent 50%);
+    "></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: oklch(0.76 0.13 178);">How It Works</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-display" style="color: oklch(0.95 0.006 80);">
+          Up and running in three steps
+        </h2>
+        <p class="mt-4 text-lg leading-relaxed" style="color: oklch(0.82 0.008 80 / 0.60);">
+          No spreadsheets. No finance degree. No code. Just connect, ask, and act.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 relative">
+        <!-- Connector line (desktop only) -->
+        <div class="hidden md:block absolute top-10 left-1/4 right-1/4 h-px" style="background: linear-gradient(90deg, oklch(0.64 0.16 178 / 0.3), oklch(0.64 0.16 178 / 0.6), oklch(0.64 0.16 178 / 0.3));"></div>
+
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center animate-slide-up delay-100">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 relative" style="background: oklch(0.13 0.018 250); border: 1px solid oklch(0.64 0.16 178 / 0.3);">
+            <span class="text-2xl font-bold font-display" style="color: oklch(0.76 0.13 178);">01</span>
+            <div class="absolute -top-1 -right-1 w-3 h-3 rounded-full" style="background: oklch(0.64 0.16 178);"></div>
+          </div>
+          <h3 class="text-xl font-semibold font-display mb-3" style="color: oklch(0.95 0.006 80);">Connect Your Accounts</h3>
+          <p class="text-sm leading-relaxed max-w-xs" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Link every brokerage, retirement account, or taxable portfolio via secure read/write API. Takes under two minutes. Your data stays encrypted and private.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center animate-slide-up delay-200">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 relative" style="background: oklch(0.13 0.018 250); border: 1px solid oklch(0.64 0.16 178 / 0.3);">
+            <span class="text-2xl font-bold font-display" style="color: oklch(0.76 0.13 178);">02</span>
+            <div class="absolute -top-1 -right-1 w-3 h-3 rounded-full" style="background: oklch(0.64 0.16 178);"></div>
+          </div>
+          <h3 class="text-xl font-semibold font-display mb-3" style="color: oklch(0.95 0.006 80);">Ask in Plain English</h3>
+          <p class="text-sm leading-relaxed max-w-xs" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Query your portfolio like a conversation. Veltora's AI parses your goals, risk tolerance, and holdings to give you precise, personalized recommendations — not generic guidance.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center animate-slide-up delay-300">
+          <div class="w-20 h-20 rounded-2xl flex items-center justify-center mb-6 relative" style="background: oklch(0.13 0.018 250); border: 1px solid oklch(0.64 0.16 178 / 0.3);">
+            <span class="text-2xl font-bold font-display" style="color: oklch(0.76 0.13 178);">03</span>
+            <div class="absolute -top-1 -right-1 w-3 h-3 rounded-full" style="background: oklch(0.64 0.16 178);"></div>
+          </div>
+          <h3 class="text-xl font-semibold font-display mb-3" style="color: oklch(0.95 0.006 80);">Automate and Grow</h3>
+          <p class="text-sm leading-relaxed max-w-xs" style="color: oklch(0.82 0.008 80 / 0.60);">
+            Approve a rebalance, set an alert, or let Veltora execute your strategy automatically. You stay in control — the AI does the heavy lifting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       TESTIMONIAL / SOCIAL PROOF
+       ================================================================ -->
+  <section class="py-20 md:py-28" style="background: oklch(0.13 0.018 250);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: oklch(0.76 0.13 178);">What Investors Say</p>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight font-display" style="color: oklch(0.95 0.006 80);">Real investors. Real results.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="rounded-xl p-7 border animate-slide-up delay-100" style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="text-sm leading-relaxed mb-5 font-serif" style="color: oklch(0.82 0.008 80 / 0.75); font-size: 1rem; font-style: italic;">
+            "I had accounts at Fidelity, Schwab, and a crypto exchange. Veltora was the first tool that actually unified them and showed me I was 70% overweight in tech."
+          </p>
+          <div>
+            <p class="text-sm font-semibold" style="color: oklch(0.95 0.006 80);">Marcus T.</p>
+            <p class="text-xs" style="color: oklch(0.82 0.008 80 / 0.45);">Software engineer · $180K portfolio</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="rounded-xl p-7 border animate-slide-up delay-200" style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="text-sm leading-relaxed mb-5 font-serif" style="color: oklch(0.82 0.008 80 / 0.75); font-size: 1rem; font-style: italic;">
+            "Betterment felt like a black box. Veltora gives me the why behind every recommendation. I've cut my fee drag by $2,100 a year just from the initial analysis."
+          </p>
+          <div>
+            <p class="text-sm font-semibold" style="color: oklch(0.95 0.006 80);">Priya R.</p>
+            <p class="text-xs" style="color: oklch(0.82 0.008 80 / 0.45);">Product manager · $310K portfolio</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="rounded-xl p-7 border animate-slide-up delay-300" style="background: oklch(0.17 0.022 250); border-color: oklch(0.95 0.006 80 / 0.07);">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="text-sm leading-relaxed mb-5 font-serif" style="color: oklch(0.82 0.008 80 / 0.75); font-size: 1rem; font-style: italic;">
+            "I asked 'should I be worried about a recession hitting my portfolio?' and got a risk breakdown by sector, a drawdown estimate, and three specific hedging options in under 30 seconds."
+          </p>
+          <div>
+            <p class="text-sm font-semibold" style="color: oklch(0.95 0.006 80);">David L.</p>
+            <p class="text-xs" style="color: oklch(0.82 0.008 80 / 0.45);">Physician · $475K portfolio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       FINAL CTA — Full-width teal gradient
+       ================================================================ -->
+  <section id="cta" class="py-24 md:py-32 relative overflow-hidden" style="background: oklch(0.17 0.022 250);">
+    <div class="absolute inset-0" style="
+      background:
+        radial-gradient(ellipse at 30% 50%, oklch(0.64 0.16 178 / 0.18), transparent 55%),
+        radial-gradient(ellipse at 75% 60%, oklch(0.64 0.16 178 / 0.10), transparent 50%),
+        linear-gradient(135deg, oklch(0.13 0.018 250) 0%, oklch(0.20 0.032 255) 50%, oklch(0.13 0.018 250) 100%);
+    "></div>
+
+    <!-- Teal accent top line -->
+    <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg, transparent, oklch(0.64 0.16 178 / 0.6), transparent);"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs font-semibold tracking-widest uppercase mb-5 animate-fade-in" style="color: oklch(0.76 0.13 178);">Start Free Today</p>
+      <h2 class="text-3xl md:text-5xl font-bold tracking-tight font-display leading-tight mb-6 animate-slide-up delay-100" style="color: oklch(0.95 0.006 80);">
+        Stop leaving money on the table.<br/>
+        <span style="font-family: 'Crimson Pro', Georgia, serif; font-weight: 300; font-style: italic; color: oklch(0.76 0.13 178);">Your AI co-pilot is ready.</span>
+      </h2>
+      <p class="text-lg leading-relaxed max-w-xl mx-auto mb-10 animate-slide-up delay-200" style="color: oklch(0.82 0.008 80 / 0.65);">
+        Connect your portfolio today and get your first AI-powered analysis — free. No credit card, no commitment. Just clarity on where you actually stand.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up delay-300">
+        <a
+          href="mailto:hello@veltora.ai"
+          class="inline-flex items-center gap-2 px-8 py-4 font-semibold rounded-lg transition-all duration-150 text-base"
+          style="background: oklch(0.64 0.16 178); color: oklch(0.13 0.018 250); box-shadow: 0 0 40px oklch(0.64 0.16 178 / 0.4);"
+          onmouseover="this.style.background='oklch(0.54 0.15 178)'"
+          onmouseout="this.style.background='oklch(0.64 0.16 178)'"
+        >
+          Get my free portfolio analysis
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="mt-4 text-sm animate-slide-up delay-400" style="color: oklch(0.82 0.008 80 / 0.40);">
+        No credit card required · Takes 2 minutes · Cancel anytime
+      </p>
+
+      <!-- Trust signals -->
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-6 animate-fade-in delay-500">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+            <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs" style="color: oklch(0.82 0.008 80 / 0.50);">256-bit AES encryption</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+            <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs" style="color: oklch(0.82 0.008 80 / 0.50);">SOC 2 Type II compliant</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+            <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs" style="color: oklch(0.82 0.008 80 / 0.50);">Read-only access by default</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" style="color: oklch(0.76 0.13 178);">
+            <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-xs" style="color: oklch(0.82 0.008 80 / 0.50);">47,000+ investors trust Veltora</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </Base>
